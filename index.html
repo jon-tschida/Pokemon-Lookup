@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Raleway:wght@100;400&display=swap"
+        rel="stylesheet">
+    <!-- End import fonts -->
+    <link rel="stylesheet" href="style.css">
+    <title>Pokemon Lookup</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <div class="pokemon-form">
+            <form>
+                <label>Enter a Pokemon:</label> <br>
+                <input type="text" id="input" class="input-field"> <br>
+                <button class="button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="MainContent" class="hidden">
+
+        <p id="pokemon-name-heading">Pokemon Name</p>
+        <hr style="width: 30%; margin: auto;">
+        <div class="info-container">
+            <div class="pokemon-info-head">
+                <h1>Details</h1>
+            </div>
+            <div class="pokemon-info-head">
+                <h1>Base Stats</h1>
+            </div>
+        </div>
+
+        <div style=" display: flex; justify-content: center;">
+            <div class="pokemon-info" id="pokemon-info-left">
+            </div>
+            <div class="pokemon-info" id="pokemon-info-right">
+            </div>
+        </div>
+
+        <div>
+            <div style="text-align: center; font-size: 30px; margin-top: 30px;">Types</div>
+            <div class="types-container">
+            </div>
+        </div>
+
+        <div>
+            <div style="text-align: center; font-size: 30px; margin-top: 30px;">Abilities</div>
+            <div class="abilites-container">
+                <p class="abilites">Blaze</p>
+            </div>
+        </div>
+
+        <div class="info-container" id="imgHeader">
+            <div class="pokemon-info-head" style="margin-top: 50px;">
+                <h1>Standard Image</h1>
+            </div>
+            <div class="pokemon-info-head" style="margin-top: 50px;">
+                <h1>Shiny Image</h1>
+            </div>
+        </div>
+
+        <div id="pokemon-images">
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+/*
+Google fonts rules:
+
+font-family: 'Cairo', sans-serif;
+font-family: 'Raleway', sans-serif;
+*/
+
+/* General styling */
+
+html {
+    scroll-behavior: smooth;
+  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img{
+    width: 350px;
+    margin-top: 10px;
+}
+
+body{
+    font-family: 'Raleway', sans-serif; 
+    /* background-color: #88B04B; */
+    background-image: url(images/background-test.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Styling Form and Button */
+
+.pokemon-form{
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-size: 30px;
+    margin: 15px 15px 15px 15px;
+
+
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+.button{
+    padding: 5px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+
+}
+.button:hover{
+    cursor: pointer;
+    transform: scale(1.1, 1.1);
+    transition: transform 0.25s ease;
+}
+.input-field{
+    margin-top: 10px;
+    width: 50%;
+    height: 35px;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Styling pokemon name */
+
+#pokemon-name-heading{
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+/* Styling info collumns and collumn titles  */
+
+.pokemon-info-head{
+    width: 30%;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.pokemon-info{
+    width: 40%;
+    display: inline-grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 5px;
+    column-gap: 10px;
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 25px;
+
+    border: white solid;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 5px;
+
+    position: relative;
+}
+
+.pokemon-info::before{
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    border-radius: 5px;
+}
+
+#pokemon-name-heading{
+    text-align: center; 
+    margin-top: 30px; 
+    margin-bottom: 5px;
+    font-size: 40px;
+}
+
+.info-container{
+    display: flex; 
+    justify-content: center;
+}
+
+/* Styling for standard and shiny images */
+
+#pokemon-images{
+    display: flex; 
+    justify-content: center; 
+
+}
+
+/* Styling types */
+
+.types-container{
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+}
+.types{
+    font-size: 25px;
+    border: solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    width: 200px;
+
+}
+
+/* Styling Abilities  */
+
+.abilites-container{
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+}
+.abilites{
+    font-size: 25px;
+    border: solid white;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 10px 0px 10px;
+    width: 200px;
+    background-color: white;
+}
+
+
+/* Hidden class to hide our content until they search a pokemon */
+.hidden{
+    display: none;
+}
+
+
+
+/* Styling for pokemon types */
+
+.normal{
+    background-color: grey;
+}
+.flying{
+background-color: skyblue;
+} 
+.fire{
+    background-color: #ff9100;
+}
+.poison{
+    background-color: #852287;
+}
+.electric{
+    background-color: yellow;
+}
+.fighting{
+    background-color: #d26c19;
+}
+.bug{
+    background-color: #40852e;
+}
+.water{
+    background-color: #0a81ff;
+}
+.grass{
+    background-color: #37bd32;
+}
+.ice{
+    background-color: #62f4e1;
+}
+.ground{
+    background-color: #ffdb80;
+}
+.psychic{
+    background-color: #ff80b5;
+}
+.dark{
+    background-color: #644e26;
+}
+.rock{
+    background-color: #c7a76b;
+}
+.ghost{
+    background-color: #905591;
+}
+.steel{
+    background-color: #828282;
+}
+.dragon{
+    background-color: #8e00ad;
+}
+.fairy{
+    background-color: #e98aff;
+}
