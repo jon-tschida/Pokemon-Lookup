@@ -33,6 +33,7 @@ const abilitiesContent = document.querySelector(`.abilites-container`)
 
 let clicked = 0;
 
+// Event Listener for the submit button
 submitButton.addEventListener(`click`, function (e) {
     e.preventDefault()
     pokemon = input.value
@@ -46,11 +47,8 @@ submitButton.addEventListener(`click`, function (e) {
     setTimeout(() => { clicked = 0 }, 5000)
 })
 
-// capitalize function to use 
-const capitalize = str => {
-    str = str.replace(str[0], str[0].toUpperCase());
-    return str;
-}
+
+// Functions //
 
 // API request funciton, we use a XMLHttpRequst() function to carry this out. 
 // Our function requests a pokemon param to use in the API request
@@ -67,7 +65,7 @@ const makeRequest = function (pokemon) {
             data = JSON.parse(request.response);
             console.log(data)
 
-            populateStats(data)
+            populateDetails(data)
             populateBaseStats(data)
             populateImages(data)
             populateTypes(data)
@@ -81,7 +79,15 @@ const makeRequest = function (pokemon) {
     }
 }
 
-const populateStats = function (data) {
+
+// capitalize function to use 
+const capitalize = str => {
+    str = str.replace(str[0], str[0].toUpperCase());
+    return str;
+}
+
+// Populate Details from API 
+const populateDetails = function (data) {
     let { name, height, weight, id, base_experience } = data;
     pokemonInfoLeft.innerHTML =
         `
@@ -103,6 +109,8 @@ const populateStats = function (data) {
 
 }
 
+
+// Populate Stats from API 
 const populateBaseStats = function (data) {
     let statsContent = ``;
     data.stats.forEach((_, i) => {
@@ -116,6 +124,7 @@ const populateBaseStats = function (data) {
     pokemonInfoRight.innerHTML = statsContent;
 }
 
+// Populate images from API 
 const populateImages = function (data) {
     pokemonImages.innerHTML =
         `
@@ -136,6 +145,7 @@ const populateImages = function (data) {
 `
 }
 
+// Populate Types from API
 const populateTypes = function (data) {
     let typeContent = ``;
     data.types.forEach((_, i) => {
@@ -146,6 +156,8 @@ const populateTypes = function (data) {
     typesContainer.innerHTML = typeContent;
 }
 
+
+// Populate abilites from API
 const populateAbilites = function (data) {
     let abilities = ``;
     data.abilities.forEach((_, i) => {
