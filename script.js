@@ -5,7 +5,7 @@
 // Selecting main content div to hide it until user searches for pokemon
 const mainContent = document.getElementById(`MainContent`);
 
-// Selecing button and form 
+// Selecting button and form 
 const submitButton = document.querySelector(`.button`);
 const input = document.querySelector(`.input-field`);
 
