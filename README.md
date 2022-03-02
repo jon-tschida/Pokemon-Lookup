@@ -1,6 +1,6 @@
 # Pokemon-Lookup
 
-## Tech used:
+## Languages:
 - HTML
 - CSS
 - JavaScript
