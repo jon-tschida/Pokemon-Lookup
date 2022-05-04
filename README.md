@@ -1,5 +1,7 @@
 # Pokemon-Lookup
 
+#### View a working version of this project [HERE](https://pleasehirejon.com/project-info/pokemon-lookup-info)
+
 ## Languages:
 - HTML
 - CSS
